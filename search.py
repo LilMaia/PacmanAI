@@ -32,17 +32,6 @@ class SearchProblem:
         """
         util.raiseNotDefined()
 
-
-def tinyMazeSearch(problem):
-    """Retorna uma sequência de movimentos que resolve tinyMaze. Para qualquer outro labirinto, o
-    a sequência de movimentos estará incorreta, portanto, use-a apenas para o tinyMaze.
-    """
-    from game import Directions
-    s = Directions.SOUTH
-    w = Directions.WEST
-    return  [s, s, w, s, w, w, s, w]    
-    
-
 def breadthFirstSearch(problem: SearchProblem):
     """Pesquisa primeiro os nós mais rasos na árvore de pesquisa."""
     s,S,q,P,goal = problem.getStartState(),set(),[],{},None
