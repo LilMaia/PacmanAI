@@ -1,6 +1,11 @@
-# search.py
+# Rafael de Paula Maia
+# Luam Gonçalves
+# Celia Regina
+# Lucas Coelho
+# Gustavo Vieira
 
 import util
+
 
 class SearchProblem:
     """Esta classe descreve a estrutura de um problema de pesquisa, mas não implementa
@@ -33,7 +38,7 @@ class SearchProblem:
         util.raiseNotDefined()
 
 def breadthFirstSearch(problem: SearchProblem):
-    """Pesquisa primeiro os nós mais rasos na árvore de pesquisa."""
+    """Busca em largura: pesquisa primeiro os nós mais rasos na árvore de pesquisa."""
     s,S,q,P,goal = problem.getStartState(),set(),[],{},None
     S.add(s)
     for i in problem.getSuccessors(s):
